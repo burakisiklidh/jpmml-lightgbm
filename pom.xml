@@ -15,7 +15,7 @@
 
 	<name>JPMML-LightGBM</name>
 	<description>Java library and command-line application for converting LightGBM models to PMML</description>
-	<url>https://github.com/jpmml/jpmml-lightgbm</url>
+	<url>https://github.com/burakisiklidh/jpmml-lightgbm</url>
 
 	<licenses>
 		<license>
@@ -38,14 +38,14 @@
 	</modules>
 
 	<scm>
-		<connection>scm:git:git@github.com:jpmml/jpmml-lightgbm.git</connection>
-		<developerConnection>scm:git:git@github.com:jpmml/jpmml-lightgbm.git</developerConnection>
-		<url>git://github.com/jpmml/jpmml-lightgbm.git</url>
+		<connection>scm:git:git@github.com:burakisiklidh/jpmml-lightgbm.git</connection>
+		<developerConnection>scm:git:git@github.com:burakisiklidh/jpmml-lightgbm.git</developerConnection>
+		<url>git://github.com/burakisiklidh/jpmml-lightgbm.git</url>
 		<tag>HEAD</tag>
 	</scm>
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/jpmml/jpmml-lightgbm/issues</url>
+		<url>https://github.com/burakisiklidh/jpmml-lightgbm/issues</url>
 	</issueManagement>
 
 	<dependencyManagement>
