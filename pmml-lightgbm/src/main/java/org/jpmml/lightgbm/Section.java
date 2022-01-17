@@ -87,7 +87,13 @@ public class Section extends LinkedHashMap<String, String> {
 	}
 
 	public String[] getStringArray(String key, int length){
-		String[] result = LightGBMUtil.parseStringArray(get(key), length);
+		String key_;
+		if(get(key, false) == null && key.contentEquals("objective")){
+			key_ = "custom";
+		}else{
+			key_ = get(key);
+		}
+		String[] result = LightGBMUtil.parseStringArray(key_, length);
 
 		for(int i = 0; i < result.length; i++){
 			result[i] = LightGBMUtil.unescape(result[i]);

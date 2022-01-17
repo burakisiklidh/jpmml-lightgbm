@@ -49,6 +49,8 @@ import org.jpmml.converter.TypeUtil;
 import org.jpmml.converter.WildcardFeature;
 import org.jpmml.converter.visitors.NaNAsMissingDecorator;
 import org.jpmml.lightgbm.visitors.TreeModelCompactor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class GBDT {
 
@@ -478,6 +480,8 @@ public class GBDT {
 
 		return (value != null ? Double.valueOf(value) : null);
 	}
+
+	private static final Logger logger = LoggerFactory.getLogger(GBDT.class);
 
 	static
 	private ObjectiveFunction loadObjectiveFunction(Section section){
