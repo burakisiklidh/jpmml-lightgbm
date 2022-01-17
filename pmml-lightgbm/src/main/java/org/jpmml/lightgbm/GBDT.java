@@ -531,6 +531,8 @@ public class GBDT {
 			// MulticlassSoftmax
 			case "multiclass":
 				return new MultinomialLogisticRegression(name, average_output, config.getInt("num_class"));
+			case "custom":
+				return new CustomLambdarank(name, average_output);
 			default:
 				throw new IllegalArgumentException(standardizedName);
 		}
